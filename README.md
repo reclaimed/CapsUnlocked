@@ -1,8 +1,13 @@
-# CapsUnlocked
+# CapsUnlocked ([download](https://github.com/reclaimed/CapsUnlocked/releases/download/0.5/CapsUnlockedPreview.zip))
 <img align="right" src="https://raw.githubusercontent.com/reclaimed/capsunlocked/master/README-files/context-menu.v0.5.png">
-A Windows utility that maps the CapsLock to something useful. The main purpose was to give the users uninterrupted experience of switching the input language on the both Windows and Mac computers (differences between PC and Mac hotkeys is a source of permanent confusion if choose the words carefully).
+A Windows utility that maps the [CapsLock](https://en.wikipedia.org/wiki/Caps_lock) to something useful. The main purpose was to give the users uninterrupted experience of switching the input language on the both Windows and Mac computers (differences between PC and Mac hotkeys is a source of permanent confusion if choose the words carefully).
 
-Written in C# for .NET Framework 4.6.1.
+Requirements:
+* x86 or amd64 platform
+* Windows 7/8/8.1/10 
+* .NET Framework 4.6.1
+* does NOT require Admin Rights
+* a keyboard with the CapsLock key
 
 ### What does it do
 In short, it makes the CapsLock useful again.
@@ -14,12 +19,12 @@ To change the action, you just right-click the System Tray icon and select the a
 ### Actions (i.e. what the CapsLock can be mapped to)
 * Switch Input Language:
   * Win+Space (a newly promoted standard in Windows 8 and up)
-  * Alt+Shift (a default for most of the classic Windows installations)
+  * Alt+Shift (a default for the most of the classic Windows installations)
   * Ctrl+Shift
 * Single key mappings:
   * Escape (VIM users love it)
-  * Left CTRL (Emacs users are in love with it)
-  * TAB
+  * Left CTRL (Emacs users are in love with this)
+  * TAB (nobody loves TAB)
 * Accessibility:
   * Win+Ctrl+Enter (Windows Narrator)
   * Win+Plus (Windows Magnifier)
@@ -37,7 +42,16 @@ To change the action, you just right-click the System Tray icon and select the a
 * Shift+CapsLock as CapsLock (for those who love to shout sometimes)
 
 ### Download and install
-There's no installer at the moment, so just [download](https://github.com/reclaimed/CapsUnlocked/releases/download/0.5/CapsUnlockedPreview.zip) it, unpack and run.
+There's no installer at the moment and to get it to work you need to download it, unpack and run.
 
 It's not a portable, though, as the settings are stored in Windows Registry. Will fix it in the next releases. On the other hand, no much settings for now.
 
+### Plans
+The general plan is to debug it endlessly, get tired and forget it eventually.
+
+But I do have a couple of nice ideas more to implement:
+* Different sound frequency for different languages
+* Mute microphones (and not the LineIn)
+* Mute both Speakers and Microphones
+* Precise mouse mode (i.e. lower DPI on time the CapsLock is pressed)
+* CapsLock Plus - a special mode that involves BlockChain&trade;, Cloud&trade; and Neural Networks&trade; to decide what next action the user is anticipating.
