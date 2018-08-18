@@ -76,13 +76,11 @@
   <ItemGroup>
     <Compile Include="ActionsEnum.cs" />
     <Compile Include="CheckFullscreen.cs" />
-    <Compile Include="GetGlobalLanguage.cs" />
     <Compile Include="KeyboardMapper.cs" />
     <Compile Include="SoundGenerator.cs" />
     <Compile Include="TrayIconController.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WindowsAudioVolume.cs" />
     <Compile Include="WinputManager\BaseHook.cs" />
     <Compile Include="WinputManager\Constants.cs" />
     <Compile Include="WinputManager\KeyboardHook.cs" />
