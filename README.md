@@ -1,6 +1,6 @@
 # CapsUnlocked ([download](https://github.com/reclaimed/CapsUnlocked/releases/download/0.5/CapsUnlockedPreview.zip))
 <img align="right" src="https://raw.githubusercontent.com/reclaimed/capsunlocked/master/README-files/context-menu.v0.5.png">
-A Windows utility that maps the [CapsLock](https://en.wikipedia.org/wiki/Caps_lock) to something useful. The main purpose was to give the users uninterrupted experience of switching the input language on the both Windows and Mac computers (differences between PC and Mac hotkeys is a source of permanent confusion if choose the words carefully).
+A Windows utility that maps the [CapsLock](https://en.wikipedia.org/wiki/Caps_lock) to something useful. The main purpose was to provide the users uninterrupted experience of switching the input language on the both Windows and Mac computers (differences between PC and Mac hotkeys is a source of permanent confusion if choose the words carefully).
 
 Requirements:
 * x86 or amd64 platform
@@ -10,7 +10,15 @@ Requirements:
 * a keyboard with the CapsLock key
 
 ### What does it do
-In short, it makes the CapsLock useful again.
+In short, it's the ultimate answer to the questions:
+* how to disable CapsLock in Windows[*]
+* how to map CapsLock to Escape in Windows
+* how to map CapsLock to Control in Windows
+* how to switch input languages with CapsLock in Windows
+* переключение языка caps lock windows
+* переключение языка по caps lock
+
+[*] not implemented yet
 
 The program sits in the System Tray and waits for Caps Lock and once it happened, CapsUnlocked performs one of the pre-programmed actions (so no need to mess with command lines, batch files and like this).
 
@@ -50,8 +58,8 @@ It's not a portable, though, as the settings are stored in Windows Registry. Wil
 The general plan is to debug it endlessly, get tired and forget it eventually.
 
 But I do have a couple of nice ideas more to implement:
-* Different sound frequency for different languages
+* A different sound frequency for different languages
 * Mute microphones (and not the LineIn)
 * Mute both Speakers and Microphones
 * Precise mouse mode (i.e. lower DPI on time the CapsLock is pressed)
-* CapsLock Plus - a special mode that involves BlockChain&trade;, Cloud&trade; and Neural Networks&trade; to decide what next action the user is anticipating.
+* CapsLock Plus - a special mode that involves BlockChain&trade;, Cloud&trade; and Neural Networks&trade; to decide what next action the user is anticipating - and do that.
