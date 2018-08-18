@@ -1,6 +1,6 @@
 # CapsUnlocked ([download](https://github.com/reclaimed/CapsUnlocked/releases/download/0.5/CapsUnlockedPreview.zip))
 <img align="right" src="https://raw.githubusercontent.com/reclaimed/capsunlocked/master/README-files/context-menu.v0.5.png">
-A Windows utility that maps the [CapsLock](https://en.wikipedia.org/wiki/Caps_lock) to something useful. The main purpose was to provide the users uninterrupted experience of switching the input language on the both Windows and Mac computers (differences between PC and Mac hotkeys is a source of permanent confusion if choose the words carefully).
+A Windows utility that maps CapsLock to something useful. The main purpose was to provide the users uninterrupted experience of switching the input language on the both Windows and Mac computers (differences between PC and Mac hotkeys is a source of permanent confusion if choose the words carefully).
 
 Requirements:
 * x86 or amd64 platform
@@ -24,7 +24,7 @@ The program sits in the System Tray and waits for Caps Lock and once it happened
 
 To change the action, you just right-click the System Tray icon and select the action that suits your intentions. No need to reload, no need to reboot the whole PC, nothing.
 
-### Actions (i.e. what the CapsLock can be mapped to)
+### Actions (i.e. what CapsLock can be mapped to)
 * Switch Input Language:
   * Win+Space (a newly promoted standard in Windows 8 and up)
   * Alt+Shift (a default for the most of the classic Windows installations)
@@ -61,5 +61,5 @@ But I do have a couple of nice ideas more to implement:
 * A different sound frequency for different languages
 * Mute microphones (and not the LineIn)
 * Mute both Speakers and Microphones
-* Precise mouse mode (i.e. lower DPI on time the CapsLock is pressed)
+* Precise mouse mode (i.e. lower DPI on the time CapsLock is pressed down)
 * CapsLock Plus - a special mode that involves BlockChain&trade;, Cloud&trade; and Neural Networks&trade; to decide what next action the user is anticipating - and do that.
