@@ -1,65 +1,92 @@
-# CapsUnlocked (download [exe](https://github.com/reclaimed/CapsUnlocked/releases/download/0.5.1/CapsUnlockedSetupPreview.exe) or [zip](https://github.com/reclaimed/CapsUnlocked/releases/download/0.5/CapsUnlockedPreview.zip))
-<img align="right" src="https://raw.githubusercontent.com/reclaimed/capsunlocked/master/README-files/context-menu.v0.5.png">
-A Windows utility that maps CapsLock to something useful. The main purpose was to provide the users uninterrupted experience of switching the input language on the both Windows and Mac computers (differences between PC and Mac hotkeys is a source of permanent confusion if choose the words carefully).
+﻿# CapsUnlocked ([download](https://github.com/reclaimed/CapsUnlocked/releases))
+<img align="right" src="https://raw.githubusercontent.com/reclaimed/capsunlocked/master/README-files/context-menu.png">
+A Windows freeware utility for CapsLock remapping.
 
-Requirements:
-* x86 or amd64 platform
-* Windows 7/8/8.1/10 
+## Requirements
+
+* Windows 7/8/8.1/10 either x86 or amd64
 * .NET Framework 4.6.1
-* does NOT require Admin Rights
-* a keyboard with the CapsLock key
+* a keyboard with CapsLock
 
-### What does it do
-In short, it's the ultimate answer to the questions:
-* how to disable CapsLock in Windows[*]
-* how to map CapsLock to Escape in Windows
-* how to map CapsLock to Control in Windows
-* how to switch input languages with CapsLock in Windows
-* переключение языка caps lock windows
-* переключение языка по caps lock
+## Description
 
-[*] not implemented yet
+_CapsUnlocked_ is a Windows opensource, freeware utility distributed under the MIT license, 
+that allows users to configure CapsLock to perform an alternative behaviour.
 
-The program sits in the System Tray and waits for Caps Lock and once it happened, CapsUnlocked performs one of the pre-programmed actions (so no need to mess with command lines, batch files and like this).
+It was created with IT people and mechanical engineers in mind:
+1. It provides an uninterrupted experience of switching of the input languages for users of Windows AND Macs
+2. CapsLock is useless for programmers. On the other hand, programmers from non-western countries switch the languages very often (for example, the code in English, but comments and a group chat in Russian)
+3. Extra features like mapping to VIM and Emacs hotkeys were added on user demand
 
-To change the action, you just right-click the System Tray icon and select the action that suits your intentions. No need to reload, no need to reboot the whole PC, nothing.
+To install you need to [download](https://github.com/reclaimed/CapsUnlocked/releases) 
+the installer (usually .exe file) or a portable version (distributed as .zip archive file) 
+and install or unpack downloaded file. To get it to work, respectively:  
+* find it in Start Menu (**Programs->CapsUnlocked->Run CapsUnlocked**) and click to run
+* or enter the folder with unpacked archive and open the executable file **CapsUnlocked.exe** 
 
-### Actions (i.e. what CapsLock can be mapped to)
+## Options and actions
+
+When running, all options of CapsUnlocked are available by **right click on the System Tray icon**.
+
+All changes the user have committed will be applied and saved immediately. No need to restart or click "save configuration" or like that.
+
+##### Options
+* _Start with Windows_ - if marked, the program will start when the user logs on. Remember to run the program if the path changed.
+* _Disabled until restart_ - if marked, the program won't work until the option is unmarked or CapsUnlocked has been restarted.
+* _Disable in Fullscreen_ - if marked, the program won't work when the fullscreen video mode is activated. Useful for the games that utilize CapsLock.
+* _Make noises_ - produce meeps, clicks, and other sounds every time when you press CapsLock
+* _Shif+CapsLock as CapsLock_ - if you still need the original CapsLock functionality, it could be achieved with help of this option. Pressed with SHIFT, CapsLock toggles the CAPITAL mode. In case you need to shout in the Slack.
+
+##### Actions
 * Switch Input Language:
-  * Win+Space (a newly promoted standard in Windows 8 and up)
-  * Alt+Shift (a default for the most of the classic Windows installations)
-  * Ctrl+Shift
+  * _Win+Space_ - a newly promoted standard in Windows 8 and up.
+  * _Alt+Shift_ - a default for the most of the classic Windows installations.
+  * _Ctrl+Shift_ - alternative popular keyboard layout changing hotkeys.
 * Single key mappings:
-  * Escape (VIM users love it)
-  * Left CTRL (Emacs users are in love with this)
-  * TAB (nobody loves TAB)
+  * _Escape_ - VIM users are crazy for ESC
+  * _Control_ - Emacs users love the Left CTRL nobody knows why
+  * _Tab_ - nobody likes TAB but let it be
 * Accessibility:
-  * Win+Ctrl+Enter (Windows Narrator)
-  * Win+Plus (Windows Magnifier)
+  * _Win+Ctrl+Enter_ - Windows Narrator
+  * _Win+Plus_ - Windows Magnifier
 * Miscellaneous:
-  * Ctrl+S (save; people with OCD love this mapping!)
-  * Win+D (minimize all windows and show the desktop)
-  * Win+Comma (peek at the desktop)
-  * Mute/Unmute speakers (great for gaming at the workplace)
+  * _Ctrl+S_ - a "save document" hotkey in close reach will save somebody from the carpal tunnel syndrome
+  * _Win+D_ - minimize all windows and show the desktop
+  * _Win+Comma_ - peek at the desktop
+  * _Mute/Unmute speakers_ - great for gaming at the workplace
+  * _Deactivate CapsLock_ - filters out CapsLock without a substitute action
 
-### Settings 
-* Start with Windows (no need to look where is that StartUp folder sitting in Windows 10)
-* Disabled (if you want to give a chance to good old Caps Lock)
-* Disabled in Fullscreen (for the genuine gaming experience)
-* Make noises - meep, meep, meep
-* Shift+CapsLock as CapsLock (for those who love to shout sometimes)
 
-### Download and install
-There's no installer at the moment and to get it to work you need to download it, unpack and run.
+## Q&A
 
-It's not a portable, though, as the settings are stored in Windows Registry. Will fix it in the next releases. On the other hand, no much settings for now.
+Q: What is it for?  
+A: For assigning alternative functions on CapsLock key.
 
-### Plans
-The general plan is to debug it endlessly, get tired and forget it eventually.
+Q: What does it do?  
+A: The program is filtering out all CapsLock codes from the keyboard data stream and 
+calling internal routines instead to allow the user to remap CapsLock to Escape, Control etc.
 
-But I do have a couple of nice ideas more to implement:
-* A different sound frequency for different languages
-* Mute microphones (and not the LineIn)
-* Mute both Speakers and Microphones
-* Precise mouse mode (i.e. lower DPI on the time CapsLock is pressed down)
-* CapsLock Plus - a special mode that involves BlockChain&trade;, Cloud&trade; and Neural Networks&trade; to decide what next action the user is anticipating - and do that.
+Q: What do I need to map CapsLock to Escape or language switch or anything?  
+A: To download this program and install it. Simple as that.
+
+Q: Are there any alternatives?  
+A: There are many freeware utilities to map CapsLock in Windows.    
+* [keyla](https://github.com/Ryzhehvost/keyla/wiki/en_Screenshots) - a GUI opensource utility, simple yet powerful.
+* [AutoHotKey](http://www.autohotkey.com/) - a free, opensource software automation scripting language. In the context of CapsLock mapping, it's an obvious overkill. I have been using it, but at some point got tired of its bottled power.
+* [Punto Switcher](http://www.punto.ru/) - a sophisticated, feature-rich GUI program from the Russian internet company Yandex. I would like it, but it feels overcomplicated and still lacking some key features.
+* [lswitch](https://haali.su/winutils/) - a console utility, what means you need to make it auto-start by yourself. Freeware and opensource.
+* [Capslang](http://flydom.ru/capslang/) - a console utility.
+
+Q: "CapsUnlocked"? But what does it mean, anyway?   
+A: An allusion to Django Unchained.
+
+Q: Are you using it to switch keyboard input languages with CapsLock?  
+A: Yeah, on the daily basis.
+
+
+## Work in progress
+
+* Mouse High Precision mode
+* A different sound in different modes and for different languages
+* Mute microphone
+* Auto-VIM/Emacs mapping when an SSH window is active
