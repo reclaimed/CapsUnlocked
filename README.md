@@ -1,4 +1,4 @@
-# CapsUnlocked ([download](https://github.com/reclaimed/CapsUnlocked/releases/download/0.5/CapsUnlockedPreview.zip))
+# CapsUnlocked (download [exe](https://github.com/reclaimed/CapsUnlocked/releases/download/0.5.1/CapsUnlockedSetupPreview.exe) or [zip](https://github.com/reclaimed/CapsUnlocked/releases/download/0.5/CapsUnlockedPreview.zip))
 <img align="right" src="https://raw.githubusercontent.com/reclaimed/capsunlocked/master/README-files/context-menu.v0.5.png">
 A Windows utility that maps CapsLock to something useful. The main purpose was to provide the users uninterrupted experience of switching the input language on the both Windows and Mac computers (differences between PC and Mac hotkeys is a source of permanent confusion if choose the words carefully).
 
